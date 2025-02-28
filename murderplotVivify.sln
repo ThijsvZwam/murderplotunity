@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{18158dc1-6254-49e5-a2eb-8e337da6cf57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runtime", "Runtime.csproj", "{5a6aa25f-1f26-ca50-cdb5-363cc0e1427b}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poiyomi.ModularShaderSystem", "Poiyomi.ModularShaderSystem.csproj", "{f5d72cdd-2247-72ee-df7d-f1591fdcb1e9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThryAssemblyDefinition", "ThryAssemblyDefinition.csproj", "{1891d6b4-9f56-488c-cef1-44acce2b9a97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExporterScripts", "ExporterScripts.csproj", "{3888d8e5-6e3e-6eee-11d8-76de83f44f18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{6278450f-6d6c-8bef-0597-974129a2ff11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poi.Tools", "Poi.Tools.csproj", "{949d9810-a390-d0a2-b172-fd366d5f8a6b}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityScriptsEditor", "UtilityScriptsEditor.csproj", "{09c4a2c8-96f5-e8fc-af1f-a52f12fcbd9c}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18158dc1-6254-49e5-a2eb-8e337da6cf57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18158dc1-6254-49e5-a2eb-8e337da6cf57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5a6aa25f-1f26-ca50-cdb5-363cc0e1427b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5a6aa25f-1f26-ca50-cdb5-363cc0e1427b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f5d72cdd-2247-72ee-df7d-f1591fdcb1e9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f5d72cdd-2247-72ee-df7d-f1591fdcb1e9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1891d6b4-9f56-488c-cef1-44acce2b9a97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1891d6b4-9f56-488c-cef1-44acce2b9a97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3888d8e5-6e3e-6eee-11d8-76de83f44f18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3888d8e5-6e3e-6eee-11d8-76de83f44f18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6278450f-6d6c-8bef-0597-974129a2ff11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6278450f-6d6c-8bef-0597-974129a2ff11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{949d9810-a390-d0a2-b172-fd366d5f8a6b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{949d9810-a390-d0a2-b172-fd366d5f8a6b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09c4a2c8-96f5-e8fc-af1f-a52f12fcbd9c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09c4a2c8-96f5-e8fc-af1f-a52f12fcbd9c}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
