@@ -105,7 +105,7 @@ Shader "Custom/BlackHoleDemonCore"
 
                 // Fresnel
                 float d = dot(i.viewVector, i.normal);
-                float fresnel = saturate(pow(1 - (-saturate(-d) * 0.5 + 0.5) * 2, _FresnelPower));
+                float fresnel = saturate(pow(1 - (-saturate(-d) * 0.5 + 0.5) * 3, _FresnelPower));
 
                 // Distort
                 float pulse = sin(_Time.y) * _Pulse;

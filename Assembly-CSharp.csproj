@@ -130,7 +130,6 @@
      <None Include="Assets\LightningBolt\Readme.txt" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Skybox\ExampleSkybox.shader" />
      <None Include="Assets\_PoiyomiShaders\Shaders\9.1\Pro\Poiyomi Pro Wireframe.shader" />
-     <None Include="Assets\LightningBolt\OptimizedShaders\Normalfloor\Poiyomi Pro.shader" />
      <None Include="Assets\_PoiyomiShaders\TPS\Dev Resources\TPS.shader" />
      <None Include="Assets\LightningBolt\OptimizedShaders\Portal\Poiyomi Pro.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
@@ -159,6 +158,7 @@
      <None Include="Assets\_PoiyomiShaders\Scripts\ThryEditor\Examples\Example1.shader" />
      <None Include="Assets\_PoiyomiShaders\Shaders\ThirdParty\RalivDynamicPenetrationSystem\RalivDPS_Defines.cginc" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Depth\DepthBlending.shader" />
+     <None Include="Assets\materials\OptimizedShaders\Normalfloor\Poiyomi Pro.shader" />
      <None Include="Assets\_PoiyomiShaders\ThirdPartyLicenses\LIL_LICENSE.txt" />
      <None Include="Assets\shaders\blit\Vignette.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -172,6 +172,7 @@
      <None Include="Assets\shaders\Ring.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Noise\Simplex3D.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Vectors\Normals.shader" />
+     <None Include="Assets\shaders\WeirdParticles.shader" />
      <None Include="Assets\LightningBolt\OptimizedShaders\dropceiling\Poiyomi Pro.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Vectors\ViewVector.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Vertex\Twist.shader" />
@@ -188,7 +189,6 @@
      <None Include="Assets\_PoiyomiShaders\Shaders\Extras\MasterScanner.shader" />
      <None Include="Assets\shaders\HackedPillars3.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\LightningBolt\OptimizedShaders\Normalfloorbig 1\Poiyomi Pro.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Vertex\Scaling.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Post Processing\InverseColors.shader" />
@@ -212,6 +212,7 @@
      <None Include="Assets\_PoiyomiShaders\Scripts\ThryEditor\Examples\ThryPresetsExample.txt" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Post Processing\CameraDepth.shader" />
      <None Include="Assets\_PoiyomiShaders\Scripts\ThryEditor\Examples\ThryLabelExample.txt" />
+     <None Include="Assets\materials\OptimizedShaders\Normalfloorbig 1\Poiyomi Pro.shader" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Noise\Simplex2D.shader" />
      <None Include="Assets\_PoiyomiShaders\Shaders\ThirdParty\RalivDynamicPenetrationSystem\RalivDPS_Keyword.cginc" />
@@ -779,6 +780,9 @@
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
         <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -803,21 +807,14 @@
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
         <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UtilityScriptsEditor.csproj">
-      <Project>{09c4a2c8-96f5-e8fc-af1f-a52f12fcbd9c}</Project>
-      <Name>UtilityScriptsEditor</Name>
-    </ProjectReference>
     <ProjectReference Include="Runtime.csproj">
       <Project>{5a6aa25f-1f26-ca50-cdb5-363cc0e1427b}</Project>
       <Name>Runtime</Name>
@@ -830,13 +827,17 @@
       <Project>{f5d72cdd-2247-72ee-df7d-f1591fdcb1e9}</Project>
       <Name>Poiyomi.ModularShaderSystem</Name>
     </ProjectReference>
-    <ProjectReference Include="ExporterScripts.csproj">
-      <Project>{3888d8e5-6e3e-6eee-11d8-76de83f44f18}</Project>
-      <Name>ExporterScripts</Name>
-    </ProjectReference>
     <ProjectReference Include="ThryAssemblyDefinition.csproj">
       <Project>{1891d6b4-9f56-488c-cef1-44acce2b9a97}</Project>
       <Name>ThryAssemblyDefinition</Name>
+    </ProjectReference>
+    <ProjectReference Include="UtilityScriptsEditor.csproj">
+      <Project>{09c4a2c8-96f5-e8fc-af1f-a52f12fcbd9c}</Project>
+      <Name>UtilityScriptsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ExporterScripts.csproj">
+      <Project>{3888d8e5-6e3e-6eee-11d8-76de83f44f18}</Project>
+      <Name>ExporterScripts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

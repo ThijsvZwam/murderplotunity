@@ -887,11 +887,11 @@ Material:
     - _ClothSmoothness: 0.5
     - _ColorGradingToggle: 0
     - _ColorMask: 15
-    - _ColorShiftSpeed: 1.96
+    - _ColorShiftSpeed: 1.97
     - _ColorThemeIndex: 0
     - _ContinuousDissolve: 0
-    - _CoreGradientOffset: 0.12
-    - _CoreGradientScale: -0.61
+    - _CoreGradientOffset: 0.61
+    - _CoreGradientScale: -0.64
     - _CoreThreshold: 0.788
     - _CubeMapBlendAmount: 1
     - _CubeMapBrightness: 0
@@ -1178,7 +1178,7 @@ Material:
     - _DistortionFlowTextureUV: 0
     - _DistortionMaskChannel: 0
     - _DistortionMaskUV: 0
-    - _DistortionStrength: 1.94
+    - _DistortionStrength: 5.37
     - _DistortionStrength1: 0.01
     - _DistortionStrength1AudioLinkBand: 0
     - _DistortionStrengthAudioLinkBand: 0
@@ -1383,7 +1383,7 @@ Material:
     - _FogStartOffset: 0
     - _ForceFlatRampedLightmap: 1
     - _ForgotToLockMaterial: 1
-    - _FresnelPower: 3.42
+    - _FresnelPower: 1.5
     - _GITDEMaxEmissionMultiplier: 0
     - _GITDEMaxEmissionMultiplier1: 0
     - _GITDEMaxEmissionMultiplier2: 0
@@ -1404,7 +1404,7 @@ Material:
     - _GITDEWorldOrMesh1: 0
     - _GITDEWorldOrMesh2: 0
     - _GITDEWorldOrMesh3: 0
-    - _GlitchIntensity: 0.159
+    - _GlitchIntensity: 0.682
     - _GlitterALAlphaAddBand: 0
     - _GlitterALChronoRotationSpeed: 0
     - _GlitterALChronoRotationSpeedBand: 0
@@ -2211,7 +2211,7 @@ Material:
     - _PolarSpiralPower: 0
     - _PolarUV: 0
     - _PostProcess: 0
-    - _Pulse: 0.056
+    - _Pulse: 0.285
     - _PulseSpeed: 1
     - _RGBAAlphaBlendType: 0
     - _RGBAAlphaEmissionStrength: 0
@@ -2511,7 +2511,7 @@ Material:
     - _StochasticHexGridDensity: 1
     - _StochasticHexRotationStrength: 0
     - _StochasticMode: 0
-    - _Strength: -53.83
+    - _Strength: -3.23
     - _StylizedSpecular: 0
     - _StylizedSpecular2Feather: 0
     - _StylizedSpecularFeather: 0
@@ -3553,7 +3553,7 @@ Material:
     - _ClearCoatSpecularTint: {r: 1, g: 1, b: 1, a: 1}
     - _ClothMetallicSmoothnessMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 0}
-    - _CoreColor: {r: 1, g: 1, b: 1, a: 1}
+    - _CoreColor: {r: 0.79611063, g: 0, b: 1, a: 1}
     - _CubeMapColor: {r: 1, g: 1, b: 1, a: 1}
     - _CubeMapMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _CubeMapRotation: {r: 0, g: 0, b: 0, a: 0}
