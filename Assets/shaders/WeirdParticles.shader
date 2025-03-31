@@ -1,3 +1,5 @@
+// Upgrade NOTE: upgraded instancing buffer 'Props' to new syntax.
+
 Shader "Custom/WeirdParticles"
 {
     Properties
@@ -17,6 +19,7 @@ Shader "Custom/WeirdParticles"
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
+            #pragma multi_compile_instancing
 
             #include "UnityCG.cginc"
 
@@ -25,6 +28,10 @@ Shader "Custom/WeirdParticles"
             // #include "Assets/VivifyTemplate/Utilities/Shader Functions/Colors.cginc"
             // #include "Assets/VivifyTemplate/Utilities/Shader Functions/Math.cginc"
             // #include "Assets/VivifyTemplate/Utilities/Shader Functions/Easings.cginc"
+
+            UNITY_INSTANCING_BUFFER_START(Props)
+                // Add per-instance properties here if needed
+            UNITY_INSTANCING_BUFFER_END(Props)
 
             struct appdata
             {

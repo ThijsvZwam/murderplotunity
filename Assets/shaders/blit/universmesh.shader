@@ -23,7 +23,7 @@ Shader "Doppels shaders/Models shaders/Best Universe Within 1.02"
 		_fe("Center Offset Y", float) = 0.0
         _MainTex("Main Texture", 2D) = "white" {}
         _tc("Texture Color", color) = (0,0,0,1)
-        [IntRange]_samples("Samples", range(2, 10)) = 3
+        [IntRange]_samples("Samples", range(1, 10)) = 3
         _scale("Scale", range(0, 1)) = 0.5
         _ms("Moving Speed", range(0, 1)) = 0.025
         _mo("Manual Offset", float) = 0.0
@@ -60,6 +60,7 @@ Shader "Doppels shaders/Models shaders/Best Universe Within 1.02"
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
+            #pragma multi_compile_instancing
             #include "UnityCG.cginc"
 
             struct v2f
@@ -67,6 +68,10 @@ Shader "Doppels shaders/Models shaders/Best Universe Within 1.02"
                 float4 p : SV_POSITION;
                 float2 uv : TEXCOORD0;
             };
+
+            UNITY_INSTANCING_BUFFER_START(Props)
+            // Add any per-instance properties here if needed
+            UNITY_INSTANCING_BUFFER_END(Props)
 
             uniform sampler2D _MainTex;
             uniform float4 _MainTex_ST;

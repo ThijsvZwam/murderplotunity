@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3888d8e5-6e3e-6eee-11d8-76de83f44f18}</ProjectGuid>
+    <ProjectGuid>{0dd24323-dbcc-e172-fee5-bf725e9c3550}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>ExporterScripts</AssemblyName>
@@ -282,31 +282,31 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.28f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="AssetsTools.NET">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/AssetsTools.NET.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/AssetsTools.NET.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/System.Buffers.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Hashing">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/System.IO.Hashing.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/System.IO.Hashing.dll</HintPath>
     </Reference>
     <Reference Include="System.Memory">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/System.Memory.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics.Vectors">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/System.Numerics.Vectors.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/System.Numerics.Vectors.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/PackageCache/com.unity.render-pipelines.core@7.6.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/PackageCache/com.unity.render-pipelines.core@7.6.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.28f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -669,16 +669,16 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.28f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{18158dc1-6254-49e5-a2eb-8e337da6cf57}</ProjectGuid>
+    <ProjectGuid>{a05da508-b0f0-7322-1c73-8645bea00de5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -118,6 +118,7 @@
      <None Include="Assets\_PoiyomiShaders\Shaders\9.1\Pro\Poiyomi Pro Fur.shader" />
      <None Include="Assets\_PoiyomiShaders\Shaders\9.1\Pro\Poiyomi Pro Tessellated Geom.shader" />
      <None Include="Assets\_PoiyomiShaders\Scripts\ThryEditor\CREDITS.txt" />
+     <None Include="Assets\materials\OptimizedShaders\dropceiling\Poiyomi Pro.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Vertex\LookAtOnAxis.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Vectors\CameraForward.shader" />
      <None Include="Assets\shaders\DemonCore.shader" />
@@ -175,7 +176,6 @@
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Noise\Simplex3D.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Vectors\Normals.shader" />
      <None Include="Assets\shaders\WeirdParticles.shader" />
-     <None Include="Assets\LightningBolt\OptimizedShaders\dropceiling\Poiyomi Pro.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Vectors\ViewVector.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Vertex\Twist.shader" />
      <None Include="Assets\shaders\blit\BlackWhite.shader" />
@@ -206,6 +206,7 @@
      <None Include="Assets\_PoiyomiShaders\Shaders\9.1\Pro\Poiyomi Pro World Fur.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Vertex\Rotation.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Spaces\WorldPosition.shader" />
+     <None Include="Assets\materials\OptimizedShaders\urple\Poiyomi Pro.shader" />
      <None Include="Assets\shaders\blit\Kick.shader" />
      <None Include="Assets\OptimizedShaders\animelover\Poiyomi Pro.shader" />
      <None Include="Assets\_PoiyomiShaders\Shaders\9.1\Pro\Poiyomi Pro Tessellated.shader" />
@@ -402,25 +403,25 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.28f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="AssetsTools.NET">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/AssetsTools.NET.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/AssetsTools.NET.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/System.Buffers.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Hashing">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/System.IO.Hashing.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/System.IO.Hashing.dll</HintPath>
     </Reference>
     <Reference Include="System.Memory">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/System.Memory.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics.Vectors">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/System.Numerics.Vectors.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/System.Numerics.Vectors.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Assets/VivifyTemplate/Exporter/Dependencies/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Assets/VivifyTemplate/Exporter/Dependencies/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.28f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -771,86 +772,86 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Formats.Fbx.Editor">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.Formats.Fbx.Editor.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.Formats.Fbx.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Autodesk.Fbx.Editor">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Autodesk.Fbx.Editor.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Autodesk.Fbx.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Autodesk.Fbx">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Autodesk.Fbx.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Autodesk.Fbx.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Formats.Fbx.Runtime">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.Formats.Fbx.Runtime.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/Unity.Formats.Fbx.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/Jevk/Documents/GitHub/murderplotunity/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UtilityScriptsEditor.csproj">
-      <Project>{09c4a2c8-96f5-e8fc-af1f-a52f12fcbd9c}</Project>
+      <Project>{c02ebdef-ab25-adb3-461c-23398b780602}</Project>
       <Name>UtilityScriptsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Runtime.csproj">
-      <Project>{5a6aa25f-1f26-ca50-cdb5-363cc0e1427b}</Project>
+      <Project>{0e1a76a8-8bec-8101-2c51-7109604cb7b8}</Project>
       <Name>Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Poi.Tools.csproj">
-      <Project>{949d9810-a390-d0a2-b172-fd366d5f8a6b}</Project>
+      <Project>{cf11e9c9-08e8-294a-85d1-18114141269f}</Project>
       <Name>Poi.Tools</Name>
     </ProjectReference>
     <ProjectReference Include="Poiyomi.ModularShaderSystem.csproj">
-      <Project>{f5d72cdd-2247-72ee-df7d-f1591fdcb1e9}</Project>
+      <Project>{cf5fb676-20e7-c717-e856-8dc41a2c01d1}</Project>
       <Name>Poiyomi.ModularShaderSystem</Name>
     </ProjectReference>
     <ProjectReference Include="ExporterScripts.csproj">
-      <Project>{3888d8e5-6e3e-6eee-11d8-76de83f44f18}</Project>
+      <Project>{0dd24323-dbcc-e172-fee5-bf725e9c3550}</Project>
       <Name>ExporterScripts</Name>
     </ProjectReference>
     <ProjectReference Include="ThryAssemblyDefinition.csproj">
-      <Project>{1891d6b4-9f56-488c-cef1-44acce2b9a97}</Project>
+      <Project>{1c5efd0c-7a7b-aaec-14cb-07952adb1b4c}</Project>
       <Name>ThryAssemblyDefinition</Name>
     </ProjectReference>
   </ItemGroup>

@@ -76,7 +76,7 @@ Material:
     - _Src: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _ZWrite: 1
+    - _ZWrite: 0
     - _appearfade: 0.884
     - _dbs: 0.001
     - _disappearfade: 0.2
@@ -94,8 +94,8 @@ Material:
     - _roffset: 0
     - _rspeed: 0
     - _s: 0.03
-    - _samples: 2
-    - _scale: 1
+    - _samples: 1
+    - _scale: 0.579
     - _smo: 0
     - _sms: 0
     - _v: 0
