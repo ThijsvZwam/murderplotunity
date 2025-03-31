@@ -887,7 +887,7 @@ Material:
     - _ClothSmoothness: 0.5
     - _ColorGradingToggle: 0
     - _ColorMask: 15
-    - _ColorShiftSpeed: 1.97
+    - _ColorShiftSpeed: 0
     - _ColorThemeIndex: 0
     - _ContinuousDissolve: 0
     - _CoreGradientOffset: 0.61
@@ -1178,7 +1178,7 @@ Material:
     - _DistortionFlowTextureUV: 0
     - _DistortionMaskChannel: 0
     - _DistortionMaskUV: 0
-    - _DistortionStrength: 5.37
+    - _DistortionStrength: 1
     - _DistortionStrength1: 0.01
     - _DistortionStrength1AudioLinkBand: 0
     - _DistortionStrengthAudioLinkBand: 0
@@ -2211,7 +2211,7 @@ Material:
     - _PolarSpiralPower: 0
     - _PolarUV: 0
     - _PostProcess: 0
-    - _Pulse: 0.285
+    - _Pulse: 0.075
     - _PulseSpeed: 1
     - _RGBAAlphaBlendType: 0
     - _RGBAAlphaEmissionStrength: 0
@@ -2511,7 +2511,7 @@ Material:
     - _StochasticHexGridDensity: 1
     - _StochasticHexRotationStrength: 0
     - _StochasticMode: 0
-    - _Strength: -3.23
+    - _Strength: 2.78
     - _StylizedSpecular: 0
     - _StylizedSpecular2Feather: 0
     - _StylizedSpecularFeather: 0

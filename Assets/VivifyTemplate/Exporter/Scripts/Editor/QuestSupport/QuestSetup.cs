@@ -305,7 +305,7 @@ namespace VivifyTemplate.Exporter.Scripts.Editor.QuestSupport
 
         private bool InstallPackages()
         {
-            var questPackages = Path.Combine(QuestPreferences.ProjectPath, "Library/PackageCache/com.unity.xr.openxr@1.14.0");
+            var questPackages = Path.Combine(QuestPreferences.ProjectPath, "Library/PackageCache/com.unity.xr.openxr@1.14.1");
             var hasPackages = Directory.Exists(questPackages);
 
             var verticalStyle = new GUIStyle(GUI.skin.button)
@@ -369,7 +369,7 @@ namespace VivifyTemplate.Exporter.Scripts.Editor.QuestSupport
         {
             return Directory.Exists(QuestPreferences.ProjectPath) &&
                    !IsDirectoryNotEmpty(Path.Combine(QuestPreferences.ProjectPath, "Assets")) &&
-                   Directory.Exists(Path.Combine(QuestPreferences.ProjectPath, "Library/PackageCache/com.unity.xr.openxr@1.14.0")) &&
+                   Directory.Exists(Path.Combine(QuestPreferences.ProjectPath, "Library/PackageCache/com.unity.xr.openxr@1.14.1")) &&
                    File.Exists(QuestPreferences.UnityEditor);
         }
 

@@ -124,6 +124,7 @@
      <None Include="Assets\VivifyTemplate\Utilities\Shaders\Custom Objects\CustomNoteArrow.shader" />
      <None Include="Assets\VivifyTemplate\Utilities\Models\Object Models\credit.txt" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Opacity\Solid.shader" />
+     <None Include="Assets\shaders\blit\TvDist.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Grab Pass\InvertColors.shader" />
      <None Include="Assets\shaders\blit\blackholesuck.shader" />
      <None Include="Assets\_PoiyomiShaders\Shaders\9.1\Pro\Poiyomi Pro Early Outline.shader" />
@@ -152,6 +153,7 @@
      <None Include="Assets\shaders\blit\ChromaticAbberation.shader" />
      <None Include="Assets\VivifyTemplate\Examples\Shaders\Opacity\DarknessTransparency.shader" />
      <None Include="Assets\materials\OptimizedShaders\Building\Poiyomi Pro.shader" />
+     <None Include="Assets\shaders\blit\Universe_Within_Mesh.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\_PoiyomiShaders\Shaders\PoiLabels.txt" />
      <None Include="Assets\shaders\blit\MotionBlur.shader" />
@@ -774,6 +776,9 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Formats.Fbx.Editor">
+        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.Formats.Fbx.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
         <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
@@ -798,6 +803,12 @@
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
         <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="Autodesk.Fbx.Editor">
+        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Autodesk.Fbx.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Fbx">
+        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Autodesk.Fbx.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
@@ -810,11 +821,18 @@
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Formats.Fbx.Runtime">
+        <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/Unity.Formats.Fbx.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:/Users/sandr/Desktop/Unity Projects/murderplotVivify/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="UtilityScriptsEditor.csproj">
+      <Project>{09c4a2c8-96f5-e8fc-af1f-a52f12fcbd9c}</Project>
+      <Name>UtilityScriptsEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="Runtime.csproj">
       <Project>{5a6aa25f-1f26-ca50-cdb5-363cc0e1427b}</Project>
       <Name>Runtime</Name>
@@ -827,17 +845,13 @@
       <Project>{f5d72cdd-2247-72ee-df7d-f1591fdcb1e9}</Project>
       <Name>Poiyomi.ModularShaderSystem</Name>
     </ProjectReference>
-    <ProjectReference Include="ThryAssemblyDefinition.csproj">
-      <Project>{1891d6b4-9f56-488c-cef1-44acce2b9a97}</Project>
-      <Name>ThryAssemblyDefinition</Name>
-    </ProjectReference>
-    <ProjectReference Include="UtilityScriptsEditor.csproj">
-      <Project>{09c4a2c8-96f5-e8fc-af1f-a52f12fcbd9c}</Project>
-      <Name>UtilityScriptsEditor</Name>
-    </ProjectReference>
     <ProjectReference Include="ExporterScripts.csproj">
       <Project>{3888d8e5-6e3e-6eee-11d8-76de83f44f18}</Project>
       <Name>ExporterScripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="ThryAssemblyDefinition.csproj">
+      <Project>{1891d6b4-9f56-488c-cef1-44acce2b9a97}</Project>
+      <Name>ThryAssemblyDefinition</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

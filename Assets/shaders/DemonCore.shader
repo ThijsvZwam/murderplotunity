@@ -35,7 +35,7 @@ Shader "Custom/BlackHoleDemonCore"
             {
                 float4 vertex : POSITION;
                 float2 uv : TEXCOORD0;
-                float4 normal : NORMAL;
+                float3 normal : NORMAL;
                 UNITY_VERTEX_INPUT_INSTANCE_ID
             };
 
@@ -81,7 +81,7 @@ Shader "Custom/BlackHoleDemonCore"
                 o.screenUV = ComputeGrabScreenPos(o.vertex);
                 float3 worldPos = mul(unity_ObjectToWorld, v.vertex);
                 o.viewVector = normalize(worldPos - _WorldSpaceCameraPos);
-                o.normal = normalize(mul((float3x3)unity_ObjectToWorld, SCALED_NORMAL));
+                o.normal = UnityObjectToWorldNormal(v.normal);
                 return o;
             }
 

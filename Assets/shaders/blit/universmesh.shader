@@ -1,3 +1,16 @@
+//v 1.0
+//A bit optimized and configurated for using in unity by Doppelgänger#8376
+//Basically for vrchat animations
+
+//Original shader: https://www.shadertoy.com/view/lscczl
+//Original shader License: Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)
+
+//v 1.01
+//increased Fade Center range
+
+//v 1.02
+//Added Rotation option
+//Added 2nd Version for models
 Shader "Doppels shaders/Models shaders/Best Universe Within 1.02"
 {
     Properties
@@ -7,17 +20,17 @@ Shader "Doppels shaders/Models shaders/Best Universe Within 1.02"
         [Enum(UnityEngine.Rendering.CullMode)]_Cull("Cull", float) = 2
         [Enum(Off, 0, On, 1)]_ZWrite("ZWrite", int) = 1
         _fs("Center Offset X", float) = 0.0
-        _fe("Center Offset Y", float) = 0.0
+		_fe("Center Offset Y", float) = 0.0
         _MainTex("Main Texture", 2D) = "white" {}
         _tc("Texture Color", color) = (0,0,0,1)
-        _samples("Samples", Int) = 2
+        [IntRange]_samples("Samples", range(2, 10)) = 3
         _scale("Scale", range(0, 1)) = 0.5
         _ms("Moving Speed", range(0, 1)) = 0.025
         _mo("Manual Offset", float) = 0.0
         _sms("Segments Moving Speed", range(0, 1)) = 0.1
         _smo("Segments Manual Offset", float) = 0.0
         _dbs("Dots Blinking Speed", range(0, 1)) = 0.2
-        _s("Dots Power", Float) = 0.25
+        _s("Dots Power", range(0, 1)) = 0.25
         _lpow("Lines Power", range(0, 1)) = 1.0
         _lt("Lines Thickness", range(0, 1)) = 0.0
         _rspeed("Rotation Speed", float) = 0.0
@@ -34,7 +47,7 @@ Shader "Doppels shaders/Models shaders/Best Universe Within 1.02"
         _Src("", int) = 1
         _Dst("", int) = 1
     }
-
+    CustomEditor "BUWGUI"
     SubShader
     {
         Tags { "RenderType"="Transparent" "Queue"="Transparent" }
@@ -49,17 +62,10 @@ Shader "Doppels shaders/Models shaders/Best Universe Within 1.02"
             #pragma fragment frag
             #include "UnityCG.cginc"
 
-            struct VertexData {
-                float4 position : POSITION;
-                float2 uv : TEXCOORD0;
-                UNITY_VERTEX_INPUT_INSTANCE_ID
-            };
-
             struct v2f
             {
                 float4 p : SV_POSITION;
                 float2 uv : TEXCOORD0;
-                UNITY_VERTEX_OUTPUT_STEREO
             };
 
             uniform sampler2D _MainTex;
@@ -68,15 +74,11 @@ Shader "Doppels shaders/Models shaders/Best Universe Within 1.02"
             uniform int _samples, B;
             uniform float _fs, _fe, _v, _scale, _rb, _rbs, _rbo, _ms, _sms, _mo, _smo, _far, _near, _dbs, _s, _lpow, _lt, _rspeed, _roffset, _disappearfade, _appearfade;
 
-            v2f vert(VertexData v)
+            v2f vert (float4 v : POSITION, float2 uv : TEXCOORD0)
             {
-                UNITY_SETUP_INSTANCE_ID(v);
-                UNITY_INITIALIZE_OUTPUT(v2f, v2f o);
-                UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
-
-                o.p = UnityObjectToClipPos(v.position);
-                o.uv = v.uv;  // Pass the object's UV coordinates
-
+                v2f o;
+                o.p = UnityObjectToClipPos(v);
+                o.uv = uv;
                 return o;
             }
 
@@ -161,38 +163,38 @@ Shader "Doppels shaders/Models shaders/Best Universe Within 1.02"
             }
 
             fixed4 frag (v2f i) : SV_Target
-{
-    fixed3 col = 0.0, rc = 1.0;
-    float2 p = i.uv - 0.5 - float2(_fs, _fe);  // Use object's UV coordinates
-    float is = 1.0 / _samples;
-    for (int j = 0; j < _samples; j++)  // Changed loop variable to 'j' to avoid shadowing
-    {
-        UNITY_BRANCH if (_rspeed || _roffset)
-        {
-            p = rotate(p, _Time.y * _rspeed / (j + 1.0) + _roffset);
-        }
-        float t = frac(_ms * 10.0 * _Time.y + _mo + j * is);
-        float s = lerp(_far, _near, t);
-        float f = smoothstep(0.0, _appearfade, t) * smoothstep(0.0, _disappearfade, 1.0 - t);
-        UNITY_BRANCH if (_rb)
-        {
-            rc = HSVToRGB(float3(j * is + _rbo + _Time.y * _rbs, _rb, 1));
-        }
-        col += layer(p * s * (_scale * 9.0 + 1.0) + j * 100) * f * rc;
-    }
-    float4 tex = tex2D(_MainTex, TRANSFORM_TEX(i.uv, _MainTex)) * _tc;  // Use i.uv instead of uv
-    float a = 1.0;
-    col = saturate(col * _Color) + tex;
-    if (B)
-    {
-        col.rgb *= tex.a;
-    }
-    else
-    {
-        a = tex.a;
-    }
-    return fixed4(col, a);
-}
+            {
+                fixed3 col = 0.0, rc = 1.0;
+                float2 p = i.uv - 0.5 - float2(_fs, _fe), uv = i.uv;
+                float is = 1.0 / _samples;
+                for (int i = 0; i < _samples; i++)
+                {
+                    UNITY_BRANCH if (_rspeed || _roffset)
+                    {
+                        p = rotate(p, _Time.y * _rspeed / (i + 1.0) + _roffset);
+                    }
+                    float t = frac(_ms * 10.0 * _Time.y + _mo + i * is);
+                    float s = lerp(_far, _near, t);
+                    float f = smoothstep(0.0, _appearfade, t) * smoothstep(0.0, _disappearfade, 1.0 - t);
+                    UNITY_BRANCH if (_rb)
+                    {
+                        rc = HSVToRGB(float3(i * is + _rbo + _Time.y * _rbs, _rb, 1));
+                    }
+                    col += layer(p * s * (_scale * 9.0 + 1.0) + i * 100) * f * rc;
+                }
+                float4 tex = tex2D(_MainTex, TRANSFORM_TEX(uv, _MainTex)) * _tc;
+                float a = 1.0;
+                col = saturate(col * _Color) + tex;
+                if (B)
+                {
+                    col.rgb *= tex.a;
+                }
+                else
+                {
+                    a = tex.a;
+                }
+                return fixed4(col, a);
+            }
             ENDCG
         }
     }
